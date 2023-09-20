@@ -44,7 +44,9 @@ def new_expense(*args):
         print("\nThe spender must be in the payback users\n")
         return False
 
+    with open('expense_report.csv', 'a', newline='\n') as csvfile:
+        spamwriter = csv.writer(csvfile, delimiter=',', quoting=csv.QUOTE_MINIMAL)
+        spamwriter.writerow([infos['amount'], infos['label'], infos['spender_selection'], infos['payback_selection']])
 
-
-    print("Expense Added !\n")
+    print("\nExpense Added !\n")
     return True
