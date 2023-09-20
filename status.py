@@ -41,7 +41,7 @@ def uwu():
 
     simplified_owes_in_plain_text = []
     for simplified_owe in simplified_owes:
-        simplified_owes_in_plain_text.append(simplified_owe['user'] + " owes " + simplified_owe['to'] + " " + str(simplified_owe['amount']))
+        simplified_owes_in_plain_text.append(f"{simplified_owe['user']} owes {simplified_owe['to']} {simplified_owe['amount']}")
 
     return simplified_owes_in_plain_text
 
@@ -57,6 +57,4 @@ status_questions = [
 
 def status(*args):
     infos = prompt(status_questions)
-
-    print("\nExpense Added !\n")
     return True
