@@ -21,7 +21,7 @@ Creation of new files is recommended. Clean architectures will be rewarded
 
 ## Todo-list
 
-![Functional View](untitled(1).png)
+![Functional View](images/untitled(1).png)
 
 - [X] A new expense can be added (Mandatory expense information : Amount, label, Spender)
 - [ ] Expense registry is stored in an external file on an appropriate format for persistency (CSV is fine, any other relevant format would be cool)
@@ -31,10 +31,10 @@ Creation of new files is recommended. Clean architectures will be rewarded
 - [ ] An expense can be divided between several existing users. By default, total amount of the expense will be evenly split between all involved users and spender should automatically be checked as involved in the expense
 - [ ] New mandatory expense information : People involved in the expense
 
-![Functional View](untitled(2).png)
+![Functional View](images/untitled(2).png)
 
 
-![Example](exampleExpense.png)
+![Example](images/exampleExpense.png)
 - [ ] A status report can be accessed from the main menu, synthesizing who owes who. Every user must appear only once in the report, so you must synthesize reimbursements. 
 Exemple: 3 Users :
 - User1 owes 34,56€ to User2
